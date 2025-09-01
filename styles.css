@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Monsterrat", sans-serif;
+  background-color: #298ea3;
+}
+
+#bgImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+#loginImg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.welcome {
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.user-login {
+    margin-top: 1vh;
+    font-size: 2.5vh;
+    display: block;
+}
+
+.login-a {
+    color: #298ea3;
+}
+
+.login-card {
+  text-align: center;
+  position: relative;
+  float: right;
+  margin: 15vh 20vh 0 0;
+  z-index: 1;
+  width: 35vw;
+  height: 50vh;
+  border-radius: 20px;
+}
+
+.login-txtField {
+    margin-top: 3vh;
+    padding: 0 1vw;
+    width: 25vw;
+    height: 5vh;
+    font-size: 2.5vh;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.login-btn {
+    color: white;
+    margin-top: 5vh;
+    width: 27vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #298ea3;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
