@@ -26,13 +26,19 @@ nav {
   gap: 20px;
 }
 nav ul,
-li,
-a {
+nav li,
+nav a {
   height: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  height: auto;
 }
 nav .logo img:hover {
   opacity: 0.8;
