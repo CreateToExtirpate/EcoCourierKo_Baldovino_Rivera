@@ -10,7 +10,7 @@ body {
 /*-------------- NAV BAR -----------------*/
 
 nav {
-  background-image: url("assets/image/bg_hero.svg");
+  background-image: url("/EcoCourierKo_Baldovino_Rivera/assets/image/bg_hero.svg");
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,8 +48,8 @@ nav .logo img:hover {
 
 .links-container li a {
   color: #edf0f1;
-  font-weight: 200;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -95,105 +95,65 @@ nav button:hover {
 }
 
 .Main-container {
-  background-image: url("assets/image/bg_hero.svg");
+  background-image: url("/EcoCourierKo_Baldovino_Rivera/assets/image/bg_hero.svg");
   background-size: cover;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
-/* --------------  SECTION 1 --------------*/
+/* Main Section of Get Started */
 .home {
   display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  color: rgb(255, 255, 255);
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  background: #f6f8f900;
+  padding: 2rem;
+}
+.Main-content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.Main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  color: #173a5d;
 }
 
-.home-content {
-  max-width: 50%;
-}
-
-.home-content h1 {
-  font-family: serif;
-  font-size: 3rem;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.home-content p {
-  font-family: serif;
+.Main-content p {
   font-size: 1.2rem;
-  margin-bottom: 25px;
-  color: #ffffff;
-}
-
-.home-content button {
-  padding: 9px 25px;
-  background-color: #ffbd43;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  color: black;
-}
-
-.home-content button:hover {
-  background-color: #f0a830;
-}
-
-.illustration img {
-  max-width: 100%;
-  height: auto;
-}
-/*-------------------- SECTION 2 ----------------------*/
-.section2 {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  color: rgb(0, 0, 0);
-}
-.home-section2 {
-  max-width: 50%;
-}
-
-.home-section2 h1 {
-  font-family: serif;
-  font-size: 3rem;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.home-section2 p {
-  font-family: serif;
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
   color: #000000;
 }
-.illustration2 img {
-  max-width: 100%;
-  height: auto;
-  animation: shake 2s infinite;
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-@keyframes shake {
-  10% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  20% {
-    transform: scale(1.05) rotate(-5deg);
-  }
-  30% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  40% {
-    transform: none;
-  }
+
+.cta1 {
+  background: #27ae60;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
 }
+
+.cta1:hover {
+  background: white;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+
+/*-------------------End---------------------       */
 
 /*---------------   FOOTER ---------------------*/
 footer {
@@ -201,7 +161,7 @@ footer {
   border-top-right-radius: 60px;
   margin-top: 50vh;
   padding: 40px 10%;
-  background-image: url(assets/image/world-map.png);
+  background-image: url(/EcoCourierKo_Baldovino_Rivera/assets/image/world-map.png);
   background-size: cover;
   background-position: center;
   background-color: #000000;
