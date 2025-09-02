@@ -9,43 +9,63 @@
     <title>EcoCourierKo</title>
   </head>
   <body>
+    <div class="overlay" onclick="hideSidebar()"></div>
     <!--------------------- NAV BAR ---------------------------------->
     <nav>
-      <div class="logo">
-        <a href="../EcoCourierKo_Baldovino_Rivera/index.html">
-          <img src="../EcoCourierKo_Baldovino_Rivera/assets/image/logo-101.png" alt="EcoCourierKo Logo" />
-        </a>
-      </div>
-      <input type="checkbox" id="sidebar-active" />
-      <label for="sidebar-active" class="open-sidebar-button">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-        </svg>
-      </label>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e3e3e3">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="navbar-change">
+          <a class="cta1" href="#"><button>COURIER SIGN IN</button></a>
+        </li>
+        <li class="navbar"><a class="nav-a" href="#">HOME</a></li>
+        <li class="navbar"><a class="nav-a" href="#About">ABOUT</a></li>
+        <li class="navbar"><a class="nav-a" href="#">CONTACT US</a></li>
+        <li class="navbar"><a class="nav-a" href="#">GET COURIER</a></li>
+      </ul>
 
-      <label id="overlay" for="sidebar-active"></label>
-      <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg>
-        </label>
+      <ul>
+        <li class="logo">
+          <a href="../EcoCourierKo_Baldovino_Rivera/index.html">
+            <img src="../EcoCourierKo_Baldovino_Rivera/assets/image/logo-101.png" alt="EcoCourierKo Logo" />
+          </a>
+        </li>
 
-        <a class="cta" href="#"><button>COURIER SIGN IN</button></a>
+        <li><a class="hide-bar" href="#">HOME</a></li>
+        <li><a class="hide-bar" href="#About">ABOUT</a></li>
+        <li><a class="hide-bar" href="#">CONTACT US</a></li>
+        <li><a class="hide-bar" href="../EcoCourierKo_Baldovino_Rivera/login.html">GET COURIER</a></li>
 
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">CONTACT US</a></li>
-          <li>
-            <a id="get" href="#">GET COURIER</a>
-          </li>
-        </ul>
-      </div>
-      <a class="cta1" href="#"><button>COURIER SIGN IN</button></a>
+        <!--  <li>
+          <a class="cta2" href="#"><button>COURIER SIGN IN</button></a>
+        </li>-->
+        <li class="menu-button" onclick="openSidebar()">
+          <a href="#"
+            ><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e3e3e3">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
     </nav>
+    <!-------------------NAV A JSCRIPT--------------------->
+    <script>
+      function openSidebar() {
+        document.querySelector(".sidebar").style.right = "0";
+        document.querySelector(".overlay").style.display = "block";
+      }
+
+      function hideSidebar() {
+        document.querySelector(".sidebar").style.right = "-400px";
+        document.querySelector(".overlay").style.display = "none";
+      }
+    </script>
 
     <!---------------------SECTION 1--------------------->
     <div class="Main-container">
@@ -68,7 +88,7 @@
           <img src="assets/image/erasebg-transformed.png" alt="E-Waste illustration" />
         </div>
         <div class="home-section2">
-          <h1>Why choose EcoCourierKo?</h1>
+          <h2>Why choose EcoCourierKo?</h2>
           <p>
             We connect eco-conscious couriers with communities in Davao to collect and recycle electronic waste
             responsibly. Together, we reduce pollution and promote a sustainable city.
@@ -77,7 +97,36 @@
       </section>
     </div>
     <!----------------- SECTION 3------------------->
-
+    <section class="section3" id="About">
+      <div class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+          <li>Sign up or log in to your account.</li>
+          <li>Schedule a convenient e-waste pickup.</li>
+          <li>Our volunteer courier collects your e-waste.</li>
+          <li>E-waste is delivered to certified recycling partners.</li>
+        </ol>
+      </div>
+      <div class="impact">
+        <h2>Our Impact</h2>
+        <ul>
+          <li><strong>120+</strong> pickups completed</li>
+          <li><strong>500kg</strong> e-waste recycled</li>
+          <li><strong>30+</strong> active volunteers</li>
+        </ul>
+      </div>
+      <div class="testimonials">
+        <h2>What Our Users Say</h2>
+        <blockquote>
+          "EcoCourierKo made it so easy to recycle my old electronics. The courier was friendly and professional!"<br />
+          <span>- Maria, Davao City</span>
+        </blockquote>
+        <blockquote>
+          "Volunteering as a courier has helped me give back to my community and protect the environment."<br />
+          <span>- John, Volunteer</span>
+        </blockquote>
+      </div>
+    </section>
     <!--------------  FOOTER  ------------------->
 
     <footer class="footer">

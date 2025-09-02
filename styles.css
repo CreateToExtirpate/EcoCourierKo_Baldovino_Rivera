@@ -23,18 +23,18 @@ body {
 }
 
 .welcome {
-    font-size: 8vh;
-    font-weight: bold;
+  font-size: 8vh;
+  font-weight: bold;
 }
 
 .user-login {
-    margin-top: 1vh;
-    font-size: 2.5vh;
-    display: block;
+  margin-top: 1vh;
+  font-size: 2.5vh;
+  display: block;
 }
 
 .login-a {
-    color: #298ea3;
+  color: #298ea3;
 }
 
 .login-card {
@@ -49,23 +49,23 @@ body {
 }
 
 .login-txtField {
-    margin-top: 3vh;
-    padding: 0 1vw;
-    width: 25vw;
-    height: 5vh;
-    font-size: 2.5vh;
-    border-radius: 5px;
-    border: 2px solid #ccc;
+  margin-top: 3vh;
+  padding: 0 1vw;
+  width: 25vw;
+  height: 5vh;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  border: 2px solid #ccc;
 }
 
 .login-btn {
-    color: white;
-    margin-top: 5vh;
-    width: 27vw;
-    height: 5vh;
-    border: none;
-    border-radius: 5px;
-    background-color: #298ea3;
-    font-size: 2.5vh;
-    cursor: pointer;
+  color: white;
+  margin-top: 5vh;
+  width: 27vw;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #298ea3;
+  font-size: 2.5vh;
+  cursor: pointer;
 }

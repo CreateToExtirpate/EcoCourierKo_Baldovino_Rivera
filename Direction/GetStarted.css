@@ -1,81 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: "Montserrat", sans-serif;
-  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #000000 0%, rgba(255, 255, 255, 0.76) 50%, #000000 100%);
+  min-height: 100vh;
+  color: #222;
 }
 
 /*-------------- NAV BAR -----------------*/
 
 nav {
-  background-image: url("/EcoCourierKo_Baldovino_Rivera/assets/image/bg_hero.svg");
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  height: 80px;
+  background-color: #1a6a78;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  max-height: 100px;
 }
-.links-container {
-  height: 100%;
+nav ul {
   width: 100%;
+  list-style: none;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  gap: 20px;
 }
-nav ul,
-nav li,
+nav li {
+  height: 90px;
+}
 nav a {
   height: 100%;
-  padding: 0 20px;
+  padding: 0 30px;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-nav a {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 10px;
-  height: auto;
+nav a:hover {
+  color: #ffbd43;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  display: none;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+nav li.logo img {
+  height: 150px;
+  width: auto;
+  transition: opacity 0.3s ease;
 }
 nav .logo img:hover {
   opacity: 0.8;
 }
 
-.logo img {
-  width: auto;
-  height: auto;
-  max-height: 80px;
-  cursor: pointer;
-  transition: opacity 03s;
-}
-
-.links-container li a {
-  color: #edf0f1;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.links-container li a:hover {
-  border: 2px solid #ffbd43;
-  color: #ffbd43;
-}
-
-#get {
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  color: rgb(255, 255, 255);
-}
-#get:hover {
-  color: #ffbd43;
-}
-nav button {
-  padding: 9px 25px;
+nav .cta1 button,
+nav .cta2 button {
+  padding: 9px 18px;
   background-color: #ffbd43;
   border: none;
   border-radius: 50px;
@@ -88,84 +76,170 @@ nav button {
 nav button:hover {
   background-color: #f0a830;
 }
-#sidebar-active {
+.menu-button {
   display: none;
 }
 
-.open-sidebar-button,
-.close-sidebar-button {
-  display: none;
-}
-.cta {
-  display: none;
-}
-
-.Main-container {
-  background-image: url("/EcoCourierKo_Baldovino_Rivera/assets/image/bg_hero.svg");
-  background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
 /* Main Section of Get Started */
-.home {
+
+.bg-img {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+
+  background-image: url("../assets/image/WALL-E.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+div.bg-img h1.title {
+  margin-bottom: 10px;
+  background: transparent;
+  backdrop-filter: blur(1px);
   text-align: center;
-  background: #f6f8f900;
-  padding: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  padding: 0 20px;
+  box-shadow: 1px 0px 20px rgba(0 0 0 / 50%);
+
+  color: #b3e5fc;
+  font-size: 4rem;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+.overlay {
+  background-color: #000000b4;
+  height: 95vh;
+  width: 100%;
+  position: absolute;
+  border: 1px solid black;
+  bottom: 0;
+}
+.overlay1 {
+  font-size: 1rem;
+  position: absolute;
+  color: #b3e5fc;
+  bottom: 220px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*------------------------ CONTENT -------------------------------*/
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 0 10px;
+  min-height: 90vh;
+  width: 100%;
+}
+
 .Main-content {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 2rem;
-  border-radius: 10px;
+  /* box-shadow: 0 4px 24px rgba(28, 54, 51, 0.13);*/
+  padding: 32px 28px;
+  height: 100%;
+  max-width: 70vw;
+  width: 100%;
+  margin: 0;
 }
+
 .Main-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-  color: #173a5d;
+  font-size: 2.2rem;
+  color: #000000;
+  margin-bottom: 18px;
+  font-weight: 700;
 }
 
 .Main-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #000000;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  color: #444;
 }
 
-.cta-buttons {
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.section3 > div {
+  background: #f7f7f7;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(41, 142, 163, 0.07);
+  padding: 18px 16px;
+}
+
+.section3 h2 {
+  font-size: 1.1rem;
+  color: #298ea3;
+  margin-bottom: 8px;
+}
+
+.section3 p {
+  font-size: 1rem;
+  color: #333;
+}
+/* CTA Actions */
+.cta-actions {
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   justify-content: center;
+  margin-top: 16px;
   flex-wrap: wrap;
 }
 
-.cta1 {
-  background: #27ae60;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-  border: 2px solid transparent;
+.cta-card {
+  background: linear-gradient(135deg, #00000068 0%, rgba(255, 255, 255, 0.76) 50%, #00000063 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(41, 142, 163, 0.09);
+  padding: 28px 22px;
+  min-width: 240px;
+  flex: 1 1 240px;
+  text-align: center;
 }
 
-.cta1:hover {
-  background: white;
-  color: #27ae60;
-  border: 2px solid #27ae60;
+.cta-card h2 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.cta-card p {
+  color: #1f1f1f;
+  margin-bottom: 18px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ffbd43;
+  color: #222;
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(41, 142, 163, 0.09);
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn:hover {
+  background: #f0a830;
+  color: #fff;
 }
 
 /*-------------------End---------------------       */
 
+/**-----------------   SECTION 3 ---------------------*/
+
 /*---------------   FOOTER ---------------------*/
 footer {
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  margin-top: 50vh;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-top: 10vh;
   padding: 40px 10%;
   background-image: url(/EcoCourierKo_Baldovino_Rivera/assets/image/world-map.png);
   background-size: cover;
@@ -221,97 +295,174 @@ footer {
   display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
-  nav .cta1 {
-    display: none;
-  }
-  nav .cta {
-    display: block;
-    top: 15px;
-    right: 15px 20px;
-    text-align: center;
-    margin: none;
-    height: auto;
-  }
-  nav .cta button {
-    margin: none;
-  }
+/*------------------ MEDIA QUERY -------------------*/
 
-  .logo img {
-    max-height: 40px;
-    display: block;
+@media screen and (max-width: 970px) {
+  nav ul li a.cta1 button {
+    margin-bottom: 25px;
   }
-
-  .links-container {
-    flex-direction: column;
-    align-items: flex-start;
+  .cta1 {
+    padding: 20px;
+    color: black;
+  }
+  nav {
+    width: calc(100% - 0px);
     position: fixed;
-
-    top: 0;
-    right: -110%;
-    z-index: 10;
-    width: 200px;
-    height: 100vh;
-    background-color: #000000;
-    padding-top: 60px;
-    transition: 0.75s ease-out;
   }
-  .links-container ul {
+  nav ul li a.cta1 {
+    height: 0px;
+  }
+  .nav-a {
+    height: 50px;
+  }
+  li.navbar {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  li.navbar-change {
+    height: 20px;
+  }
+  nav ul li a.nav-a {
+    height: 3vh;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.306);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.75s ease-out;
   }
-  .links-container li {
-    width: 100%;
-  }
-  .links-container li a {
-    display: block;
-    padding: 10px 20px;
-    width: 100%;
-    border-bottom: 1px solid #222;
-    height: auto;
-  }
-
-  #sidebar-active:checked ~ .links-container {
-    right: 0;
-  }
-  #sidebar-active:checked ~ #overlay {
+  .overlay {
+    position: fixed;
+    z-index: -1;
     height: 100%;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: none;
   }
-  .open-sidebar-button,
-  .close-sidebar-button {
-    display: block;
-  }
-  .open-sidebar-button {
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 1;
-    cursor: pointer;
+  nav ul li .cta1 button {
+    display: none;
   }
 
-  .close-sidebar-button {
+  .menu-button {
     display: block;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    cursor: pointer;
-    height: none;
+  }
+
+  .hide-bar {
+    display: none;
+  }
+  .nav-a {
+    padding: 20px;
+    color: black;
+  }
+
+  .nav-a:hover {
+    background-color: #00000023;
+    color: black;
+  }
+  nav {
+    z-index: 20;
+  }
+  /*------------------ HOME SECTION -------------------*/
+}
+
+@media screen and (max-width: 900px) {
+  nav ul li .cta2 button {
+    display: none;
+  }
+
+  nav ul li a#nav-a {
+    height: 4vh;
+  }
+  nav ul {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  nav ul li .cta1 button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: inherit;
+    border: none;
+    font-weight: normal;
+    font: 16px "Montserrat", "Open Sans";
+  }
+
+  /*------------------ HOME SECTION -------------------*/
+  .main-content {
+    padding: 24px 0 0 0;
+  }
+  .Main-content {
+    padding: 24px 10px;
+  }
+  .section3 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .cta-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li a button {
+    display: none;
+  }
+  nav li.logo img {
+    height: 150px;
+    width: auto;
+    transition: opacity 0.3s ease;
   }
   .illustration,
   .illustration2 {
     display: none;
   }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.306);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.75s ease-out;
+  }
 
-  /*-----------CHANGE --------------*/
+  /*----------- SECTION --------------*/
+  .Main-content h1 {
+    font-size: 1.5rem;
+  }
+  .Main-content {
+    padding: 16px 4px;
+  }
+  .section3 > div,
+  .cta-card {
+    padding: 14px 8px;
+  }
+
+  /*---------------   FOOTER ---------------------*/
+
   .row {
     flex-direction: column;
     text-align: center;
