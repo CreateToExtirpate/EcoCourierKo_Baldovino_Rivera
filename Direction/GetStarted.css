@@ -53,9 +53,10 @@ nav li:first-child {
   width: 100%;
 }
 nav li.logo img {
-  height: 150px;
+  height: 100px;
   width: auto;
   transition: opacity 0.3s ease;
+ 
 }
 nav .logo img:hover {
   opacity: 0.8;
@@ -298,6 +299,9 @@ footer {
 /*------------------ MEDIA QUERY -------------------*/
 
 @media screen and (max-width: 970px) {
+  nav ul li.logo img {
+    z-index: -10;
+  }
   nav ul li a.cta1 button {
     margin-bottom: 25px;
   }
@@ -371,10 +375,18 @@ footer {
   nav {
     z-index: 20;
   }
+    div.bg-img {
+    background-position-x: center;
+    background-position-y: 10vh;
+ }
+  div h3.overlay1 {
+    top: 56vh;
+ }
   /*------------------ HOME SECTION -------------------*/
 }
 
 @media screen and (max-width: 900px) {
+
   nav ul li .cta2 button {
     display: none;
   }
@@ -396,6 +408,10 @@ footer {
     font-weight: normal;
     font: 16px "Montserrat", "Open Sans";
   }
+   div.bg-img {
+    background-position-x: center;
+    background-position-y: 10vh;
+ }
 
   /*------------------ HOME SECTION -------------------*/
   .main-content {
@@ -424,7 +440,7 @@ footer {
     display: none;
   }
   nav li.logo img {
-    height: 150px;
+    height: 100px;
     width: auto;
     transition: opacity 0.3s ease;
   }
@@ -448,8 +464,19 @@ footer {
     justify-content: flex-start;
     transition: right 0.75s ease-out;
   }
+/*----------------CLEANING BUDDY---------------------*/
+ div h3.overlay1 {
+    top: 56vh;
+ }
+ div.bg-img {
+    background-position-x: center;
+    background-position-y: 10vh;
+ }
 
-  /*----------- SECTION --------------*/
+
+
+
+/*----------- SECTION --------------*/
   .Main-content h1 {
     font-size: 1.5rem;
   }
