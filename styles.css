@@ -8,9 +8,9 @@ body {
 
 #bgImg {
   position: absolute;
-  left: 0;
   top: 0;
   height: 100vh;
+  width: 100vw;
   z-index: -1;
 }
 
@@ -40,6 +40,10 @@ body {
 
 .login-a {
   color: #298ea3;
+}
+
+#courier-placement {
+  margin: 10vh auto 0 auto;
 }
 
 #login-placement {
