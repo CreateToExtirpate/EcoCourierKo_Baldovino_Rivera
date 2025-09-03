@@ -51,7 +51,7 @@ nav li:first-child {
   width: 100%;
 }
 nav li.logo img {
-  height: 150px;
+  height: 10vh;
   width: auto;
   transition: opacity 0.3s ease;
 }
@@ -446,7 +446,7 @@ footer {
     display: none;
   }
   nav li.logo img {
-    height: 150px;
+    height: 7vh;
     width: auto;
     transition: opacity 0.3s ease;
   }
