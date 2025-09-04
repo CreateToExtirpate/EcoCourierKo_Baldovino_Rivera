@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Montserrat", "Open Sans";
-  background-color: #000000eb;
+  background-color: #ffe3d5;
   min-height: 100vh;
 }
 
@@ -51,9 +51,14 @@ nav li:first-child {
   width: 100%;
 }
 nav li.logo img {
-  height: 10vh;
+  height: 30vh;
   width: auto;
   transition: opacity 0.3s ease;
+}
+nav li.logo h3{
+  color: rgb(0, 15, 92);
+  font-size: 1.5rem;
+  margin-left: -3vw;
 }
 nav .logo img:hover {
   opacity: 0.8;
@@ -80,8 +85,9 @@ nav button:hover {
 
 /*--------------CONTAIN ALL SECTION----------------------------*/
 .Main-container {
-  background-image: url("assets/image/bg_hero.svg");
+  background-image: url("assets/image/bg_103.png");
   background-size: cover;
+  background-position: top;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
@@ -89,17 +95,19 @@ nav button:hover {
 .home {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
   color: rgb(255, 255, 255);
-  background-image: url(assets/image/bg_hero.svg);
+  background-image: url(assets/image/bg_102.png);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-  background-size: cover;
-  background-position: center;
+  
+ 
 }
+  
+
 
 .home-content {
   max-width: 50%;
@@ -201,7 +209,7 @@ nav button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  background: #f7f7f7;
+  background: #e7cbbd;
   padding: 60px 50px;
   border-radius: 40px;
   margin: 40px auto;
@@ -260,8 +268,8 @@ nav button:hover {
 /*---------------   FOOTER ---------------------*/
 
 footer {
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   margin-top: 20vh;
   padding: 40px 10%;
   background-image: url(assets/image/world-map.png);
@@ -446,9 +454,14 @@ footer {
     display: none;
   }
   nav li.logo img {
-    height: 7vh;
+    margin-left: -4vw;
+    height: 25vh;
     width: auto;
     transition: opacity 0.3s ease;
+  }
+  nav li.logo h3{
+    font-size: 1rem;
+    margin-left: -3vw;
   }
   .illustration,
   .illustration2 {
