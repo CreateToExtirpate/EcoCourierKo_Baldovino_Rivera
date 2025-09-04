@@ -65,7 +65,7 @@ nav .logo img:hover {
 nav .cta1 button,
 nav .cta2 button {
   padding: 9px 18px;
-  background-color: #ffbd43;
+  background-color: #ebc7b5;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -158,7 +158,7 @@ div.bg-img h1.title {
 .Main-content p {
   font-size: 1.1rem;
   margin-bottom: 28px;
-  color: #444;
+  color: #000000;
 }
 
 .section3 {
