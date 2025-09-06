@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Montserrat", "Open Sans";
-  background-color: #ffe3d5;
+   background-color:   #303B57;     /* #ffe3d5; */
   min-height: 100vh;
 }
 html {
@@ -15,7 +15,7 @@ html {
 /*-------------- NAV BAR -----------------*/
 
 nav {
-  background-color: #1f6d7d;
+  background-color: #1f2a44;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   max-height: 100px;
 }
@@ -61,7 +61,7 @@ nav li.logo img {
   transition: opacity 0.3s ease;
 }
 nav li.logo h3{
-  color: rgb(0, 15, 92);
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   margin-left: -3vw;
 }

@@ -6,15 +6,18 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);
+  background: linear-gradient(135deg,#1f2a44 0%,#303B57 50%, #1f2a44 100%);                  /*(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);*/
   min-height: 100vh;
   color: #222;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*-------------- NAV BAR -----------------*/
 
 nav {
-  background-color: #1f6d7d;
+  background-color: #1f2a44;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   max-height: 100px;
 }
@@ -59,7 +62,7 @@ nav li.logo img {
   transition: opacity 0.3s ease;
 }
 nav li.logo h3{
-  color: rgb(0, 15, 92);
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   margin-left: -3vw;
 }
@@ -156,7 +159,7 @@ div.bg-img h1.title {
 
 .Main-content h1 {
   font-size: 2.2rem;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 18px;
   font-weight: 700;
 }
@@ -164,7 +167,7 @@ div.bg-img h1.title {
 .Main-content p {
   font-size: 1.1rem;
   margin-bottom: 28px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .section3 {
@@ -201,7 +204,7 @@ div.bg-img h1.title {
 }
 
 .cta-card {
-  background: linear-gradient(135deg,#ebc7b5 0%,#ffe3d5 50%, #ebc7b5 100%);
+  background: linear-gradient(135deg,#ffffffab 0%,#ffffff 50%, #ffffffbf 100%);
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(41, 142, 163, 0.09);
   padding: 28px 22px;
