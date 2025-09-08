@@ -56,7 +56,7 @@ nav li:first-child {
 }
 nav li.logo img {
   margin-left: -2vw;
-  height: 30vh;
+  height: 20vh;
   width: auto;
   transition: opacity 0.3s ease;
 }
@@ -73,18 +73,21 @@ nav .logo img:hover {
 nav .cta1 button,
 nav .cta2 button  {
   padding: 9px 12px;
-  background-color: #ffbd43;
+  background-color: #7bd18e;
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 2vh;
   font-weight: 500;
   transition: all 0.3s ease;
   color: black;
 }
 
  nav button:hover {
-  background-color: #f0a830;
+  background-color: #447663;
+  color:white;
 }
+
 .menu-button {
   display: none;
 }
@@ -102,18 +105,13 @@ nav .cta2 button  {
   display: flex;
   flex-direction: row;
   min-height: 110vh;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
   color: rgb(255, 255, 255);
   background-image: url(assets/image/bg_102.png);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-  
- 
 }
-  
-
 
 .home-content {
   max-width: 50%;
@@ -133,17 +131,20 @@ nav .cta2 button  {
 
 .home-content button {
   padding: 9px 25px;
-  background-color: #ffbd43;
+  float: right;
+  background-color: #7bd18e;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
   color: black;
+  font-size:3vh;
 }
 
 .home-content button:hover {
-  background-color: #f0a830;
+  background-color: #447663;
+  color: white;
 }
 .illustration {
   flex: 1;
