@@ -6,8 +6,9 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(135deg,#1f2a44 0%,#303B57 50%, #1f2a44 100%);                  /*(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);*/
+  background-image: url(/EcoCourierKo_Baldovino_Rivera/assets/image/Bg_102.png);                  /*(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);*/
   min-height: 100vh;
+  background-repeat: no-repeat;
   color: #222;
 }
 html {
@@ -40,7 +41,7 @@ nav a {
   color: rgb(255, 255, 255);
 }
 nav a:hover {
-  color: #ffbd43;
+  color: #7bd18e;
 }
 nav li:first-child {
   margin-right: auto;
@@ -226,7 +227,7 @@ div.bg-img h1.title {
 
 .cta-btn {
   display: inline-block;
-  background: #ffbd43;
+  background: #7bd18e;
   color: #222;
   font-weight: 600;
   padding: 10px 28px;
@@ -237,8 +238,8 @@ div.bg-img h1.title {
 }
 
 .cta-btn:hover {
-  background: #f0a830;
-  color: #fff;
+  background: #447663;
+  color: #000000;
 }
 
 /*-------------------End---------------------       */

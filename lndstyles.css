@@ -39,7 +39,7 @@ nav a {
   color: rgb(255, 255, 255);
 }
 nav a:hover {
-  color: #ffbd43;
+  color: #7bd18e;
 }
 nav li:first-child {
   margin-right: auto;
@@ -65,10 +65,7 @@ nav li.logo h3{
   font-size: 1.5rem;
   margin-left: -3vw;
 }
-nav .logo img:hover {
-  opacity: 0.8;
-}
-
+ 
 
 nav .cta1 button,
 nav .cta2 button  {

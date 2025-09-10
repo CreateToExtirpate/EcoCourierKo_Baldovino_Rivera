@@ -1,3 +1,22 @@
+const sidebar = document.querySelector(".sidebar");
+const main = document.querySelector(".main-content");
+const desktopBtn = document.querySelector("#desktop-btn");
+const mobileBtn = document.querySelector("#mobile-btn");
+
+// Desktop button = toggle
+desktopBtn.onclick = function () {
+  if (window.innerWidth > 643) {  // Desktop
+    sidebar.classList.toggle("active");
+    main.classList.toggle("active");
+  } else {  // Mobile
+    sidebar.classList.remove("active"); // acts as close button
+  }
+};
+
+// Mobile open button = open
+mobileBtn.onclick = function () {
+  sidebar.classList.add("active");
+};
 
 
 
