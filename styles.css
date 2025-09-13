@@ -92,6 +92,10 @@ body {
   border: 2px solid #ccc;
 }
 
+.login-txtField.invalid {
+  background-color: #ffdddd;
+}
+
 .login-btn {
   color: white;
   margin-top: 5vh;
@@ -125,7 +129,7 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.prev-btn {
+#prev-btn {
   display: inline-block;
   color: white;
   margin-top: 2vh;
@@ -139,7 +143,7 @@ body {
   cursor: pointer;
 }
 
-.next-btn {
+#next-btn {
   display: inline-block;
   color: white;
   margin-top: 2vh;
@@ -164,8 +168,8 @@ body {
 
 .apply-tab {
   border: 1px solid white;
-  vertical-align: middle;
   height: 70%;
+  display: none;
 }
 
 .tab-title {
@@ -188,9 +192,17 @@ body {
 .step {
   height: 15px;
   width: 15px;
-  background-color: #bbbbbb;
+  background-color: #447663;
   border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #298ea3;
 }
