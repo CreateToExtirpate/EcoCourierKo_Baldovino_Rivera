@@ -206,3 +206,48 @@ body {
 .step.finish {
   background-color: #298ea3;
 }
+
+/*END OF APPLICATION FORM*/
+
+/*USER SIDE*/
+ .tan-bg {
+  background-color: #ebc7b5;
+ }
+
+ .navbar {
+  background-color: #298ea3;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+ }
+
+ .main-content {
+  box-sizing: border-box;
+  height: 80vh;
+  margin: 3vh 15vh 0 15vh;
+ }
+
+ .order-container {
+  height: 20%;
+  gap: 2vw;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .order{
+  background-color: #ffe3d5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+ }
+
+  .main-order{
+  margin-top: 2vh;
+  background-color: white;
+  height:80%;
+  border-radius: 10px;
+ }
+/*END OF USER SIDE*/
