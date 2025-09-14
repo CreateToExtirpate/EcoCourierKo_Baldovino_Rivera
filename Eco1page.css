@@ -422,6 +422,18 @@ dialog .controls button.close-btn {
   height: 100%;
   width: 100%;
 }
+/*--------------------CLIENT 2------------------------*/
+
+.box1  div.client-image2 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste2.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+
+
 
 /*---------------- CLIENT 3 -------------------*/
 
@@ -429,6 +441,56 @@ dialog .controls button.close-btn {
   border-radius: 20px;
   position: absolute;
   background-image: url(assets/Client-image/client-Ewaste3.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+/*---------------- CLIENT 4 -------------------*/
+
+.box1  div.client-image4 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste4.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+/*---------------- CLIENT 5 -------------------*/
+
+.box1  div.client-image5 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste5.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+/*---------------- CLIENT 6 -------------------*/
+
+.box1  div.client-image6 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste6.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+/*---------------- CLIENT 7 -------------------*/
+
+.box1  div.client-image7 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste7.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;  
+}
+/*---------------- CLIENT 8 -------------------*/
+
+.box1  div.client-image8 {
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(assets/Client-image/client-Ewaste8);
   background-size: cover;
   height: 100%;
   width: 100%;  
