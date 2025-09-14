@@ -32,7 +32,7 @@ body {
 
 
 .sidebar.active {
-    width: 250px;
+    width: 245px;
 }
 
 
@@ -123,6 +123,7 @@ body {
 
 .sidebar .nav-item {
     display: none;
+    white-space: nowrap;
 }
 .sidebar.active .nav-item {
     display: inline-block;
@@ -139,7 +140,7 @@ body {
     line-height: 1.8rem;
     z-index: 2;
     display: none;
-    width: 9.10rem;
+    white-space: nowrap;
 }
 
 .sidebar ul li:hover .tooltip {
@@ -231,6 +232,7 @@ body {
 }
 .tag-line h4 {
     color: white;
+    font-size: 1.1  rem;
 }
 
 
@@ -271,7 +273,7 @@ div.box1 {
   color: white;
   margin: 0;
   padding: 5px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 div.box1 p.description {
     padding: 5px;
@@ -496,6 +498,48 @@ dialog .controls button.close-btn {
   width: 100%;  
 }
 
+/*--------------------SECTION 2------------------*/
+
+.section2 {
+
+  margin-top: 10px;
+  width: 100%;
+  height: 10vh;
+}
+
+.section2 i {
+  font-size: 48px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.section2 div.view-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.section2 .tooltip1 {
+  display: none;
+  position: absolute;
+  right: 40%;       
+
+  background: #000000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.view-more:hover .tooltip1 {
+  display: block;
+  opacity: 1;
+}
 
 /* ----------------------------------------------- */
 
@@ -505,7 +549,7 @@ dialog .controls button.close-btn {
     transition: all 0.5s ease;
   }
   .sidebar.active ~ .main-content {
-    left: 250px;
+    left: 240px;
     width: calc(100% - 250px);
   }
 }
