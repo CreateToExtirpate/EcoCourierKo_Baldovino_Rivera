@@ -110,7 +110,7 @@ body {
 
 .sidebar ul li a:hover {
     background-color: #2c3447;
-    color: white;
+    color: #7bd18e;
 }
 
 .sidebar ul li a i {
@@ -145,7 +145,7 @@ body {
 
 .sidebar ul li:hover .tooltip {
     display: inline;
-    color: white;
+    color: #7bd18e;
     background-color: #111;
 }
 .sidebar.active ul li .tooltip {

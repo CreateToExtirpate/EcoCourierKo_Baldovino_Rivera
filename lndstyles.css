@@ -93,6 +93,7 @@ nav .cta2 button  {
 .Main-container {
   background-image: url("assets/image/bg_103.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: top;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
@@ -106,6 +107,7 @@ nav .cta2 button  {
   align-items: center;
   padding: 0 50px;
   color: rgb(255, 255, 255);
+  background-size: cover;
   background-image: url(assets/image/bg_102.png);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
