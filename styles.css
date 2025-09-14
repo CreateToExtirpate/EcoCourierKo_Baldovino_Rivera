@@ -220,6 +220,7 @@ body {
 
 /*-----------------SIDEBAR---------------------*/
 .user i {
+  margin-left: 5px;
     font-size: 2rem;
     color: white;
 }
@@ -237,7 +238,7 @@ body {
 
 
 .sidebar.active {
-    width: 245px;
+    width: 235px;
 }
 
 
