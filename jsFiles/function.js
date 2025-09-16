@@ -5,11 +5,11 @@ const mobileBtn = document.querySelector("#mobile-btn");
 
 // Desktop button = toggle
 desktopBtn.onclick = function () {
-  if (window.innerWidth > 643) {  // Desktop
+  if (window.innerWidth > 643) {  
     sidebar.classList.toggle("active");
     main.classList.toggle("active");
-  } else {  // Mobile
-    sidebar.classList.remove("active"); // acts as close button
+  } else { 
+    sidebar.classList.remove("active"); 
   }
 };
 
