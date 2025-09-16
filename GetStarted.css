@@ -5,8 +5,7 @@
   padding: 0;
 }
 body {
-  font-family: "Montserrat", sans-serif;
-  background-image: url(/EcoCourierKo_Baldovino_Rivera/assets/image/Bg_102.png);                  /*(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);*/
+  font-family: "Montserrat", sans-serif;               /*(135deg, #ffe3d5 0%,#ebc7b5 50%, #ffe3d5 100%);*/
   min-height: 100vh;
   background-repeat: no-repeat;
   color: #222;
@@ -58,14 +57,14 @@ nav li:first-child {
 }
 nav li.logo img {
   margin-left: -2vw;
-  height: 30vh;
+  height: 20vh;
   width: auto;
   transition: opacity 0.3s ease;
 }
 nav li.logo h3{
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  margin-left: -3vw;
+  margin-left: -2vw;
 }
 nav .logo img:hover {
   opacity: 0.8;
@@ -101,8 +100,7 @@ nav button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-image: url("../assets/image/WALL-E.jpg");
+  background-image: url("assets/image/WALL-E.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -141,6 +139,9 @@ div.bg-img h1.title {
 
 /*------------------------ CONTENT -------------------------------*/
 .main-content {
+    background-image: url(assets/image/Bg_102.png);
+    background-repeat: no-repeat; 
+    background-size: cover;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +253,7 @@ footer {
   border-top-right-radius: 0px;
   margin-top: 10vh;
   padding: 40px 10%;
-  background-image: url(/EcoCourierKo_Baldovino_Rivera/assets/image/world-map.png);
+  background-image: url(assets/image/world-map.png);
   background-size: cover;
   background-position: center;
   background-color: #000000;
@@ -454,9 +455,12 @@ footer {
     display: none;
   }
   nav li.logo img {
-    height: 100px;
+    height: 80px;
     width: auto;
     transition: opacity 0.3s ease;
+  }
+  nav li.logo h3 {
+    font-size: 0.95rem;
   }
   .illustration,
   .illustration2 {

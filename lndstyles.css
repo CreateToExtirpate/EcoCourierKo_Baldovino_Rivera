@@ -63,7 +63,7 @@ nav li.logo img {
 nav li.logo h3{
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  margin-left: -3vw;
+  margin-left: -2vw;
 }
  
 
@@ -135,10 +135,10 @@ nav .cta2 button  {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: 500;
   transition: all 0.3s ease;
   color: black;
-  font-size:3vh;
+  font-size: 1.3rem;
+  font-family: 'Inter', Roboto, 'Open Sans', sans-serif;
 }
 
 .home-content button:hover {
@@ -368,7 +368,7 @@ footer {
     position: fixed;
     top: 0;
     right: -300px;
-    height: 100vh;
+    height: 200vh;
     width: 300px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.306);
@@ -412,19 +412,14 @@ footer {
   }
 }
 @media screen and (max-width: 900px) {
-  div.home-content {
-    margin-top: -1vh;
-  }
-  nav ul li .cta2 button {
-    display: none;
-  }
+
 
   nav ul li a#nav-a {
     height: 4vh;
   }
   nav ul {
     justify-content: space-between;
-    padding: 0 10px;
+
   }
   nav ul li .cta1 button {
     display: flex;
@@ -436,14 +431,36 @@ footer {
     font-weight: normal;
     font: 16px "Montserrat", "Open Sans";
   }
-
+   nav li.logo img {
+    margin-left: -3vw;
+    height: 20vh;
+    width: auto;
+    transition: opacity 0.3s ease;
+  }
+  nav li.logo h3{
+    font-size: 0.95rem;
+    margin-left: -2vw;
+  }
   /*------------------ HOME SECTION -------------------*/
 
   .home-content {
     margin-top: 30vh;
   }
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  .home-content p {
+    font-size: 0.85rem;
+  }
+  .home-content button {
+    font-size: 0.85rem;
+  }
+  .illustration {
+    height: 80vh;
+  }
   .illustration img {
-    margin-top: 20vh;
+    margin-top: 19vh;
+
   }
   .illustration2 img {
 display: none;
@@ -474,6 +491,10 @@ display: none;
     padding: 0;
     margin: 0;
   }
+  body {
+    margin: 0;
+    padding: 0;
+  }
   nav a.cta2 {
     padding: 5px;
   }
@@ -485,6 +506,7 @@ nav a.cta2 button {
     font-size: 0.5rem;
     font-weight: 200px;
   margin: 0 auto;
+  padding: 10px 9px;
   }
   nav li a button {
     display: none;
@@ -507,7 +529,7 @@ nav a.cta2 button {
     position: fixed;
     top: 0;
     right: -400px;
-    height: 100vh;
+    height: 100%;
     width: 300px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.306);
@@ -543,9 +565,14 @@ nav a.cta2 button {
     margin: 0 10px 15px 10px;
   }
 
-  div.home-content a button {
-    margin: 0 10px 10px 10px;
+  .home-content  button {
+
+    padding: 7px 10px;
+    height: 5vh;
+
+    font-size: 0.75rem;
   }
+
 
   .section2 {
     flex-direction: column;
@@ -556,6 +583,15 @@ nav a.cta2 button {
     max-width: 100%;
     justify-content: center;
     margin: 0 20px 0px 20px;
+  }
+  .home-section2 h2 {
+    font-size: 2rem;
+
+    line-height: 1.2;
+  }
+  .home-section2 p {
+    font-size: 1rem;
+
   }
   /*-----------------  FOOTER  ---------------------*/
   footer {
