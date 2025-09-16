@@ -150,7 +150,7 @@ nav .cta2 button  {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
 }
 .illustration img {
   border: 1px SOLID rgb(14, 90, 107);
