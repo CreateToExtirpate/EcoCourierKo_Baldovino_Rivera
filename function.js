@@ -96,3 +96,12 @@ document.querySelector("#open-popup8").addEventListener("click", function(){
 dialog8.querySelector(".close-btn").addEventListener("click", function(){
     dialog8.close();
 });
+
+
+
+
+function accept(button, box1) {
+    alert("You accepted the request");
+     button.innerHTML='Thank you';
+     box1.style.backgroundColor = "#56A86A";
+}

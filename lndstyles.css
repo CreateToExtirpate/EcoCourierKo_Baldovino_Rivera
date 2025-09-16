@@ -190,6 +190,7 @@ nav .cta2 button  {
   margin-bottom: 25px;
   color: #201d1d;
 }
+
 .illustration2 img {
   max-width: 100%;
   height: auto;
@@ -454,6 +455,17 @@ display: none;
   }
   .section3 > div {
     margin: 0;
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: center;
+
+  }
+  .home-section2 {
+    max-width: 100%;
+    width: 70vw;
+    height: 50vh;
   }
 }
 
