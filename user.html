@@ -1,105 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EcoCourier Ko | User</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
-  </head>
+</head>
 
-  <body class="tan-bg">
+<body class="tan-bg">
     <!------------------ SIDEBAR ----------------------------------->
 
     <div class="sidebar">
-      <div class="top">
-        <div class="logo">
-          <img src="assets/icons/UserKO.svg" />
-        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="assets/icons/UserKO.svg" />
+            </div>
 
-        <i class="bx bx-menu" id="desktop-btn" onclick="closeSidebar()"> </i>
-      </div>
-      <div class="user">
-        <i class="bxr bx-user-circle"></i>
-        <div>
-          <p class="bold">PROFILE</p>
+            <i class="bx bx-menu" id="desktop-btn" onclick="closeSidebar()"> </i>
         </div>
-      </div>
-      <ul>
-        <li>
-          <a href="#">
-            <i class="bxr bx-archive"></i>
-            <span class="nav-item">PICK-UP ORDERS</span>
-          </a>
-          <span class="tooltip">PICK-UP ORDERS</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-pickup-truck"></i>
-            <span class="nav-item">TO PICK-UP</span>
-          </a>
-          <span class="tooltip">TO PICK-UP</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bxr bx-checks"></i>
-            <span class="nav-item">COMPLETED</span>
-          </a>
-          <span class="tooltip">COMPLETION</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bxr bx-trophy-star"></i>
-            <span class="nav-item">LEADERBOARD</span>
-          </a>
-          <span class="tooltip">LEADERBOARD</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="nav-item">SETTINGS</span>
-          </a>
-          <span class="tooltip">SETTINGS</span>
-        </li>
-        <li>
-          <a href="courierLogin.html">
-            <i class="bxr bx-arrow-out-left-square-half"></i>
-            <span class="nav-item">LOGOUT</span>
-          </a>
-          <span class="tooltip">LOGOUT</span>
-        </li>
-      </ul>
+        <div class="user">
+            <i class="bxr bx-user-circle"></i>
+            <div>
+                <p class="bold">PROFILE</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bxr bx-archive"></i>
+                    <span class="nav-item">COURIER ORDER</span>
+                </a>
+                <span class="tooltip">COURIER ORDER</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-pickup-truck"></i>
+                    <span class="nav-item">HISTORY</span>
+                </a>
+                <span class="tooltip">HISTORY</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">SETTINGS</span>
+                </a>
+                <span class="tooltip">SETTINGS</span>
+            </li>
+            <li>
+                <a href="courierLogin.html">
+                    <i class="bxr bx-arrow-out-left-square-half"></i>
+                    <span class="nav-item">LOGOUT</span>
+                </a>
+                <span class="tooltip">LOGOUT</span>
+            </li>
+        </ul>
     </div>
 
     <!---------------MAIN SECTION----------------------->
     <div class="main-content">
-      <nav class="navbar">
-        <div class="logo-outside">
-          <div class="mobile-menu">
-            <i class="bx bx-menu" id="mobile-btn" onclick="openSidebar()"> </i>
-          </div>
-          <img src="assets/icons/UserKO.svg" />
-        </div>
-      </nav>
-      <div class="main-container">
-        <!--------Order Section------->
-        <div class="order-container">
-          <div class="order"></div>
-          <div class="order"></div>
-          <div class="order"></div>
-          <div class="order"></div>
-          <div class="order"></div>
-        </div>
+        <nav class="navbar">
+            <div class="logo-outside">
+                <div class="mobile-menu">
+                    <i class="bx bx-menu" id="mobile-btn" onclick="openSidebar()"> </i>
+                </div>
+                <img src="assets/icons/UserKO.svg" />
+            </div>
+        </nav>
+        <div class="main-container">
+            <!--------Order Section------->
+            <div class="order-container">
+                <div class="order">
+                    <div class="order-text">
+                        <p><b>Order Name:</b> Broken Monitors</p>
+                        <p><b>Date Created:</b> 12/12/12</p>
+                    </div>
+                    <div class="imahe">
+                        <img style="object-fit: fill; max-width: 100%; object-position: center;"
+                            src="https://preview.redd.it/8dnokvf7vbm51.jpg?width=1080&crop=smart&auto=webp&s=5398dd220a100c392535a772dd1c2f1bef423820"
+                            alt="broken monitor">
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order-text">
+                        <p><b>Order Name:</b> Broken Monitors</p>
+                        <p><b>Date Created:</b> 12/12/12</p>
+                    </div>
+                    <div class="imahe">
+                        <img style="object-fit: fill; max-width: 100%; object-position: center;"
+                            src="https://preview.redd.it/8dnokvf7vbm51.jpg?width=1080&crop=smart&auto=webp&s=5398dd220a100c392535a772dd1c2f1bef423820"
+                            alt="broken monitor">
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order-text">
+                        <p><b>Order Name:</b> Broken Monitors</p>
+                        <p><b>Date Created:</b> 12/12/12</p>
+                    </div>
+                    <div class="imahe">
+                        <img style="object-fit: fill; max-width: 100%; object-position: center;"
+                            src="https://preview.redd.it/8dnokvf7vbm51.jpg?width=1080&crop=smart&auto=webp&s=5398dd220a100c392535a772dd1c2f1bef423820"
+                            alt="broken monitor">
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order-text">
+                        <p><b>Order Name:</b> Broken Monitors</p>
+                        <p><b>Date Created:</b> 12/12/12</p>
+                    </div>
+                    <div class="imahe">
+                        <img style="object-fit: fill; max-width: 100%; object-position: center;"
+                            src="https://preview.redd.it/8dnokvf7vbm51.jpg?width=1080&crop=smart&auto=webp&s=5398dd220a100c392535a772dd1c2f1bef423820"
+                            alt="broken monitor">
+                    </div>
+                </div>
+                <div class="order">
+                </div>
+            </div>
 
-        <div class="main-order"></div>
-      </div>
+            <div class="main-order">
+                <div class="enter-image"></div>
+                <div class="inputs">
+                    <h1>E-waste Details:</h1>
+                    <input name="name" type="text" class="login-txtField" placeholder="E-waste Name" required />
+                    <input name="type" type="text" class="login-txtField" placeholder="E-waste Type" required />
+                    <input name="type" type="text" class="login-txtField" placeholder="E-waste Weght" required />
+                    <input name="username" type="text" class="login-txtField" placeholder="Address" required />
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-  <script>
+</body>
+<script>
     const sidebar = document.querySelector(".sidebar");
     const main = document.querySelector(".main-content");
     const desktopBtn = document.querySelector("#desktop-btn");
@@ -107,19 +141,20 @@
 
     // Desktop button = toggle
     desktopBtn.onclick = function () {
-      if (window.innerWidth > 643) {
-        // Desktop
-        sidebar.classList.toggle("active");
-        main.classList.toggle("active");
-      } else {
-        // Mobile
-        sidebar.classList.remove("active"); // acts as close button
-      }
+        if (window.innerWidth > 643) {
+            // Desktop
+            sidebar.classList.toggle("active");
+            main.classList.toggle("active");
+        } else {
+            // Mobile
+            sidebar.classList.remove("active"); // acts as close button
+        }
     };
 
     // Mobile open button = open
     mobileBtn.onclick = function () {
-      sidebar.classList.add("active");
+        sidebar.classList.add("active");
     };
-  </script>
+</script>
+
 </html>
