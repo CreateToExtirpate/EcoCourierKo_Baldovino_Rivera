@@ -94,19 +94,20 @@ nav button:hover {
 
 .bg-img {
   position: relative;
-  height: 95vh;
+  height: 55vh;
   width: 100%;
-  border: 1px solid black;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("assets/image/WALL-E.jpg");
+  background-image: url("assets/image/getStartedBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: black;
 }
 div.bg-img h1.title {
+
   margin-bottom: 10px;
   background: transparent;
   backdrop-filter: blur(1px);
@@ -115,27 +116,41 @@ div.bg-img h1.title {
   width: 100%;
   padding: 0 20px;
   box-shadow: 1px 0px 20px rgba(0 0 0 / 50%);
-
   color: #b3e5fc;
   font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
   z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .overlay1 {
-  background-color: #000000b4;
-  height: 95vh;
+  background-color: #00000054;
+  height: 55vh;
   width: 100%;
   position: absolute;
-  border: 1px solid black;
+ 
   bottom: 0;
 }
 .overlay2 {
   font-size: 1rem;
   position: absolute;
   color: #b3e5fc;
-  bottom: 210px;
-  font-family: "Times New Roman", Times, serif;
+  top: 58%;
+  font-family: "Montserrat", sans-serif;
 }
+
+.Logos img {
+  position: absolute;
+  bottom: 5%;
+  transform: translate(490px);
+  text-align: center;
+  left: 0;
+  height: 15vh;
+  width: auto;
+}
+
+
+
+
 
 /*------------------------ CONTENT -------------------------------*/
 .main-content {
@@ -160,14 +175,14 @@ div.bg-img h1.title {
 }
 
 .Main-content h1 {
-  font-size: 2.2rem;
+  font-size: 4rem;
   color: #ffffff;
   margin-bottom: 18px;
   font-weight: 700;
 }
 
 .Main-content p {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   margin-bottom: 28px;
   color: #ffffff;
 }
