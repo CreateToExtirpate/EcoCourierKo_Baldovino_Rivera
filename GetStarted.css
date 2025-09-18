@@ -206,7 +206,7 @@ div.bg-img h1.title {
 }
 
 .cta-card {
-  background: linear-gradient(135deg,#ffffffab 0%,#ffffff 50%, #ffffffbf 100%);
+  background-color: #ffe3d5;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(41, 142, 163, 0.09);
   padding: 28px 22px;
